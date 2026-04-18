@@ -1,0 +1,125 @@
+{
+  "cv_roc_auc_mean": 0.7971,
+  "cv_roc_auc_std": 0.0046,
+  "test_roc_auc": 0.8529,
+  "test_pr_auc": 0.6904,
+  "brier_score": 0.1242,
+  "test_report": {
+    "0": {
+      "precision": 0.8483001489909251,
+      "recall": 0.936873597606582,
+      "f1-score": 0.8903895365368212,
+      "support": 26740.0
+    },
+    "1": {
+      "precision": 0.7242731133616466,
+      "recall": 0.49741978909580437,
+      "f1-score": 0.5897845171588189,
+      "support": 8914.0
+    },
+    "accuracy": 0.8270039827228362,
+    "macro avg": {
+      "precision": 0.7862866311762858,
+      "recall": 0.7171466933511932,
+      "f1-score": 0.74008702684782,
+      "support": 35654.0
+    },
+    "weighted avg": {
+      "precision": 0.8172916507691438,
+      "recall": 0.8270039827228362,
+      "f1-score": 0.8152340661061398,
+      "support": 35654.0
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "category",
+      "importance": 0.13442
+    },
+    {
+      "feature": "country",
+      "importance": 0.131
+    },
+    {
+      "feature": "number_of_tags",
+      "importance": 0.08792
+    },
+    {
+      "feature": "title_length",
+      "importance": 0.05631
+    },
+    {
+      "feature": "title_word_count",
+      "importance": 0.05512
+    },
+    {
+      "feature": "publish_hour",
+      "importance": 0.05339
+    },
+    {
+      "feature": "title_caps_ratio",
+      "importance": 0.02685
+    },
+    {
+      "feature": "publish_dow",
+      "importance": 0.00998
+    },
+    {
+      "feature": "title_has_number",
+      "importance": 0.00802
+    },
+    {
+      "feature": "title_has_exclamation",
+      "importance": 0.00727
+    },
+    {
+      "feature": "title_has_question",
+      "importance": 0.00083
+    }
+  ],
+  "calibration_curve": [
+    {
+      "bin_mean_pred": 0.0134,
+      "bin_frac_pos": 0.0117
+    },
+    {
+      "bin_mean_pred": 0.0321,
+      "bin_frac_pos": 0.0293
+    },
+    {
+      "bin_mean_pred": 0.0607,
+      "bin_frac_pos": 0.056
+    },
+    {
+      "bin_mean_pred": 0.0957,
+      "bin_frac_pos": 0.0973
+    },
+    {
+      "bin_mean_pred": 0.1342,
+      "bin_frac_pos": 0.1203
+    },
+    {
+      "bin_mean_pred": 0.1851,
+      "bin_frac_pos": 0.175
+    },
+    {
+      "bin_mean_pred": 0.259,
+      "bin_frac_pos": 0.2597
+    },
+    {
+      "bin_mean_pred": 0.3753,
+      "bin_frac_pos": 0.3771
+    },
+    {
+      "bin_mean_pred": 0.5495,
+      "bin_frac_pos": 0.5604
+    },
+    {
+      "bin_mean_pred": 0.7966,
+      "bin_frac_pos": 0.8143
+    }
+  ],
+  "n_train": 142613,
+  "n_test": 35654,
+  "positive_rate": 0.25
+}

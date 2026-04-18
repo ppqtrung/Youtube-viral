@@ -1,0 +1,14 @@
+column,description
+video_id,Unique YouTube video identifier.
+trending_date,Date token for trending snapshot in YY.DD.MM format.
+title,Video title at collection time.
+channel_title,Channel display title at collection time.
+views,Video view count at collection time.
+likes,Video like count at collection time.
+dislikes,"Video dislike count (official if available, otherwise estimated/backfilled)."
+publish_time,Original YouTube publish timestamp (ISO 8601).
+category_id,YouTube category identifier.
+tags,Video tags joined by |.
+comments,Video comment count at collection time.
+channel_id,YouTube channel identifier.
+description,Video description text.

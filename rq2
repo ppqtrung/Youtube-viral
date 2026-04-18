@@ -1,0 +1,138 @@
+You are a senior data scientist and full-stack developer. Your task is to build a complete data-driven product from a YouTube Trending Videos dataset (2026).
+
+## OBJECTIVE
+
+Analyze the dataset and build an interactive product that helps users understand and predict YouTube virality.
+
+---
+
+## DATASET
+
+We are using this dataset:
+https://www.kaggle.com/datasets/bsthere/youtube-trending-videos-stats-2026
+
+Assume the dataset includes:
+
+* title
+* tags
+* category
+* publish time
+* views
+* likes
+* comments
+* country
+
+---
+
+## STEP 1 — DATA ANALYSIS (Python)
+
+Use pandas, numpy, matplotlib.
+
+Perform:
+
+1. Data cleaning (handle missing values, parse tags, datetime formatting)
+2. Feature engineering:
+
+   * like_ratio = likes / views
+   * comment_ratio = comments / views
+   * title_length
+   * number_of_tags
+   * publish_hour
+3. Identify patterns:
+
+   * What features correlate with high views?
+   * Best posting time
+   * Most common tags in trending videos
+   * Category performance
+4. Visualizations:
+
+   * Views vs like_ratio
+   * Posting hour vs average views
+   * Top tags frequency
+
+---
+
+## STEP 2 — BUILD A VIRALITY MODEL
+
+Create a simple predictive model:
+
+* Input: video features
+* Output: virality score (0–1)
+
+Use:
+
+* logistic regression or random forest (sklearn)
+
+Evaluate model performance.
+
+---
+
+## STEP 3 — BUILD AN INTERACTIVE APP (Streamlit)
+
+Create a Streamlit app with:
+
+### Page 1 — Dashboard
+
+* Show:
+
+  * top categories
+  * best posting times
+  * engagement benchmarks
+
+### Page 2 — Virality Predictor
+
+User inputs:
+
+* title
+* number of tags
+* category
+* publish hour
+
+Output:
+
+* predicted virality score
+* suggestions to improve (based on data insights)
+
+---
+
+## STEP 4 — INSIGHT GENERATION
+
+Generate clear insights such as:
+
+* “Videos with like_ratio > X perform better”
+* “Best upload time is between X–X”
+* “Optimal title length is X”
+
+---
+
+## STEP 5 — CODE STRUCTURE
+
+Organize project like:
+
+* data/
+* analysis.py
+* model.py
+* app.py
+
+Write clean, modular, well-commented Python code.
+
+---
+
+## STEP 6 — EXTRA (OPTIONAL)
+
+If possible:
+
+* Add NLP on titles (basic keyword extraction)
+* Suggest better titles based on trending keywords
+
+---
+
+## OUTPUT
+
+Provide:
+
+1. Full Python code
+2. Streamlit app code
+3. Instructions to run locally
+
+Make everything runnable and practical.

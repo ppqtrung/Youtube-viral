@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(/d/hackthon1/.venv/Scripts/python.exe -c \"import sys; print\\(sys.prefix\\); import pandas; print\\(pandas.__version__\\)\")",
+      "Bash(python -c \"import pandas, sklearn, streamlit, joblib; print\\('ok', pandas.__version__, sklearn.__version__, streamlit.__version__\\)\")",
+      "Bash(/d/hackthon1/.venv/Scripts/pip.exe install *)"
+    ]
+  }
+}
